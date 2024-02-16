@@ -1,0 +1,41 @@
+ul.MenuItems{
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(90deg, #00B6F0 8.75%, #46C4B6 52.7%, #D2DF43 140.59%);
+
+}
+ul.MenuItems li{
+  padding: 4px 14px;
+  list-style: none;
+  text-decoration :none;
+}
+ul.MenuItems li a{
+  text-decoration :none;
+}
+ul.MenuItems li a span{
+  color: #fff;
+}
+
+.navigation{
+  padding-top: 20px;
+}
+
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-layout-header {
+  height: 1px;
+}
+
+h3.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3.logo img{
+  max-width: 100%;
+  width: 115px;
+}
