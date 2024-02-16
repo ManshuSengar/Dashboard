@@ -21,3 +21,22 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+const isColumnMatched = (record, column, searchText) => {
+  if (column.dataIndex) {
+    const value = record[column.dataIndex] || '';
+    return value.toLowerCase().startsWith(searchText.toLowerCase()); // Use startsWith for efficiency
+  } else {
+    // Handle cases where dataIndex is not available
+    const renderFunction = column.render;
+    const renderedValue = renderFunction ? renderFunction(record) : '';
+    return renderedValue.toLowerCase().includes(searchText.toLowerCase());
+  }
+};
+
+const filteredData = useMemo(() => {
+  return searchText
+    ? dataSource.filter((record) =>
+        columns.some((column) => isColumnMatched(record, column, searchText))
+      )
+    : dataSource;
+}, [searchText, dataSource, columns]);
