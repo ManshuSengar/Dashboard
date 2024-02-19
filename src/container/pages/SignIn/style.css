@@ -1,0 +1,125 @@
+.sign-form{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  min-width: 350px;
+}
+
+.sign-form input{
+  width: 100%;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+.left-sidex2 img
+{
+  max-width: 100%;
+  border-radius: 13px;
+}
+
+.signin-page {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    transform: translate(-34%, -40%);
+  
+  }
+
+  .box3{
+    box-shadow:0px 0px 4px 3px #eeeeee;
+  }
+ .left-sidex{
+  background-color: #0a0a0a;
+ } 
+
+.left-sidex2{
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  padding: 2% 15%;
+}
+
+  .box3{
+     background-color: #0a0a0a;
+  }
+  .box3 .boxd:nth-child(1){
+    padding: 0;
+}
+
+  .box3 .boxd:nth-child(2){
+     padding: 0;
+ }
+
+  .box3 .boxd:nth-child(2) > div{
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0;
+   
+  }
+
+  .btn-submit{
+    background-color: #020228;
+    padding: 2px 20px;
+    color: #fff;
+  }
+
+
+  ul.grid-sign{
+    margin: 5% 10% 15%;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+  }
+  ul.grid-sign li {
+    list-style: none;
+    flex: 1 1 50%;
+    text-align: justify;
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e1e1;
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  ul.grid-sign li span:nth-child(1) {
+    list-style: none;
+ }
+ ul.grid-sign li span:nth-child(2) {
+  list-style: none;
+}
+  ul.grid-sign li span{
+    width: 20px;
+  }
+
+
+  .captcha-box{
+    display: flex;
+    flex-direction: row;
+  }
+  .captcha-box button{
+     border: none;
+     background: none;
+  }
+
+  .captch-code{
+    background: #ccc;
+    padding: 2px 8px;
+  }
+
+  .captch-refresh{
+    width: 20px;
+    display: block;
+  }
+  .captch-refresh img{
+    max-width: 100%;
+  }
